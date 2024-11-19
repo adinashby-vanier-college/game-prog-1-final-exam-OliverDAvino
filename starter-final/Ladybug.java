@@ -1,4 +1,3 @@
-// WARNING: This file is auto-generated and any changes to it will be overwritten
 import lang.stride.*;
 import java.util.*;
 import greenfoot.*;
@@ -14,5 +13,26 @@ public class Ladybug extends Actor
      */
     public void act()
     {
+        move();
     }
+
+    /**
+     * this moves the lady bug
+     */
+    public void move()
+    {
+        if (Greenfoot.isKeyDown("up")){
+            move (3);
+        }
+        if (Greenfoot.isKeyDown("down")){
+            move(-3);
+        }
+        if(Greenfoot.isKeyDown("left")){
+            turn(-3);
+        }
+        if(Greenfoot.isKeyDown("right")){
+            turn(3);
+        }
+    }
+    
 }
